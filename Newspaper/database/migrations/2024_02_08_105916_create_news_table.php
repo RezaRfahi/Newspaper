@@ -17,6 +17,7 @@ return new class extends Migration
             $table->text('content')->nullable();
             $table->string('url');
             $table->string('source');
+            $table->timestamp('published')->nullable();
             $table->timestamps();
         });
     }
