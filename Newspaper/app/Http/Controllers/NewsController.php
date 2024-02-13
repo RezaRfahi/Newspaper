@@ -5,10 +5,11 @@ namespace App\Http\Controllers;
 use App\Models\News;
 use App\Http\Requests\StoreNewsRequest;
 use App\Http\Requests\UpdateNewsRequest;
+use Illuminate\Support\Facades\Http;
 
 class NewsController extends Controller
 {
-    /**
+   /**
      * Display a listing of the resource.
      */
     public function index()
